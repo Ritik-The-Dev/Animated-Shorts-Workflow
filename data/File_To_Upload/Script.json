@@ -1,0 +1,42 @@
+{
+    "topic": "Budh Grah Dosh Nivaran (Mercury Affliction Pacification) and Business Success",
+    "title": {
+        "TITLE_HINDI": "बुध दोष का महाकाल उपाय! आज ही करो, व्यापार चमकाओ।",
+        "TITLE_HINGLISH": "Budh Dosh Upay: Aaj Moong Dal Daan, Business Success Guarantee."
+    },
+    "description": {
+        "DESCRIPTION_HINDI": "ज्योतिष के गुप्त उपाय से बुध ग्रह को शांत करें। धन और सफलता के लिए यह सरल उपाय आज ही अपनाएं। आज का उपाय आपकी बुद्धि और व्यापार को नई दिशा देगा। पूरा वीडियो ध्यान से देखो 👁️",
+        "DESCRIPTION_HINGLISH": "Vedic astrology secret to pacify Budh grah. Dhan aur safalta ke liye yeh saral upay aaj hi apnayein. Aaj ka upay will give new direction to your intellect and business. पूरा video dhyaan se dekho 👁️"
+    },
+    "tags": [
+        "aaj ka upay",
+        "aaj ka rashifal",
+        "astrology short video",
+        "vedic astrology remedy",
+        "grah dosh upay",
+        "paisa badhane ka upay",
+        "powerful astrology secret",
+        "hindu astrology today",
+        "spiritual warning",
+        "destiny change today",
+        "Budh grah",
+        "Mercury remedy",
+        "vyapar me safalta",
+        "moong dal upay",
+        "rishi muni",
+        "jyotish gyan",
+        "business growth secret",
+        "vani dosh",
+        "dhan prapti"
+    ],
+    "scenes": [
+        {
+            "imagePrompt": "Ancient Indian Rishi-Muni with long jata and bright tilak, sitting in deep meditation near a flowing sacred river at twilight. The sky shows a faint, glowing green planet (representing Budh/Mercury). Cinematic, divine light, high detail.",
+            "imageToVideoPrompt": "Slow camera push-in towards the Rishi's face. Subtle ripple effect on the water in the foreground. Dialogue (deep, calm, authoritative): “हे वत्स! आज बुध ग्रह की चाल अत्यंत सूक्ष्म है। तुम्हारी वाणी और व्यापार, दोनों पर इसका सीधा प्रभाव है। एक गलत शब्द, और वर्षों की मेहनत धूल बन सकती है।”"
+        },
+        {
+            "imagePrompt": "Close-up, intense shot of the Rishi's eyes, which are now open, looking directly at the viewer with concern. A faint green aura surrounds his head. Background is dark, smoky cave entrance with flickering oil lamps.",
+            "imageToVideoPrompt": "The oil lamps flicker rapidly. The Rishi slowly raises his index finger. Dialogue (calm, authoritative): “यदि मन में भ्रम है, यदि व्यापार में बार-बार हानि हो रही है, तो समझो बुध दोष तुम्हें घेरे हुए है। यह दोष बुद्धि को जड़ कर देता है। (Sound cue: Sudden silence)”"
+        }
+    ]
+}
