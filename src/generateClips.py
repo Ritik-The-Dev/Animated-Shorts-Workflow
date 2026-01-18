@@ -1,20 +1,22 @@
 import http.client
 import urllib.parse
 import os
+import time
+import random
 
 
 def generate_image_to_video(
     prompt: str,
     image_url: str,
     scene_number: int,
-    folder_name: str
+    folder_name: str,
+    max_retries: int = 3,
+    cooldown_seconds: float = 2.5
 ):
-    # ---------- API KEY ----------
     headers = {
-    'Authorization': 'Bearer sk_Jp9S2kIw9bFfq5ANd7LKIvGi1FzcLCYu'
+        'Authorization': 'Bearer sk_Jp9S2kIw9bFfq5ANd7LKIvGi1FzcLCYu'
     }
 
-    # ---------- QUERY PARAMETERS ----------
     query_params = {
         "model": "veo",
         "width": 1080,
@@ -32,38 +34,57 @@ def generate_image_to_video(
 
     encoded_prompt = urllib.parse.quote(prompt)
     encoded_query = urllib.parse.urlencode(query_params)
-
     endpoint = f"/image/{encoded_prompt}?{encoded_query}"
 
-    # ---------- API REQUEST ----------
-    conn = http.client.HTTPSConnection("gen.pollinations.ai")
-    conn.request("GET", endpoint, headers=headers)
-
-    response = conn.getresponse()
-    data = response.read()
-    content_type = response.getheader("Content-Type", "")
-
-    conn.close()
-
-    # ---------- VALIDATION ----------
-    if response.status != 200:
-        raise RuntimeError(
-            f"API Error {response.status}: {data[:300]}"
-        )
-
-    if "video" not in content_type:
-        raise ValueError(
-            f"Expected video but received '{content_type}'. "
-            f"Response preview: {data[:200]}"
-        )
-
-    # ---------- SAVE OUTPUT ----------
     folder_path = os.path.join("data", folder_name)
     os.makedirs(folder_path, exist_ok=True)
-
     video_path = os.path.join(folder_path, f"Scene{scene_number}.mp4")
 
-    with open(video_path, "wb") as f:
-        f.write(data)
+    # ---------- RETRY LOOP ----------
+    for attempt in range(1, max_retries + 1):
+        try:
+            conn = http.client.HTTPSConnection("gen.pollinations.ai", timeout=120)
+            conn.request("GET", endpoint, headers=headers)
 
-    print(f"✅ Scene {scene_number} saved → {video_path}")
+            response = conn.getresponse()
+            data = response.read()
+            content_type = response.getheader("Content-Type", "")
+
+            conn.close()
+
+            # ---------- SUCCESS ----------
+            if response.status == 200 and "video" in content_type:
+                with open(video_path, "wb") as f:
+                    f.write(data)
+
+                print(f"✅ Scene {scene_number} saved → {video_path}")
+                time.sleep(cooldown_seconds)
+                return
+
+            # ---------- SERVER ERROR (RETRYABLE) ----------
+            if response.status >= 500:
+                wait = (2 ** attempt) + random.uniform(0.5, 1.5)
+                print(
+                    f"⚠️ Scene {scene_number} attempt {attempt}/{max_retries} "
+                    f"failed with {response.status}. Retrying in {wait:.1f}s"
+                )
+                time.sleep(wait)
+                continue
+
+            # ---------- CLIENT / CONTENT ERROR (FAIL FAST) ----------
+            raise RuntimeError(
+                f"API Error {response.status}: {data[:300]}"
+            )
+
+        except Exception as e:
+            if attempt == max_retries:
+                raise RuntimeError(
+                    f"❌ Scene {scene_number} failed after {max_retries} retries.\n{e}"
+                )
+            wait = (2 ** attempt) + random.uniform(0.5, 1.5)
+            print(
+                f"⚠️ Scene {scene_number} exception on attempt {attempt}/{max_retries}: {e}\n"
+                f"Retrying in {wait:.1f}s"
+            )
+            time.sleep(wait)
+

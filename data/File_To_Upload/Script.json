@@ -1,42 +1,19 @@
 {
-    "topic": "Budh Grah Dosh Nivaran (Mercury Affliction Pacification) and Business Success",
-    "title": {
-        "TITLE_HINDI": "बुध दोष का महाकाल उपाय! आज ही करो, व्यापार चमकाओ।",
-        "TITLE_HINGLISH": "Budh Dosh Upay: Aaj Moong Dal Daan, Business Success Guarantee."
-    },
-    "description": {
-        "DESCRIPTION_HINDI": "ज्योतिष के गुप्त उपाय से बुध ग्रह को शांत करें। धन और सफलता के लिए यह सरल उपाय आज ही अपनाएं। आज का उपाय आपकी बुद्धि और व्यापार को नई दिशा देगा। पूरा वीडियो ध्यान से देखो 👁️",
-        "DESCRIPTION_HINGLISH": "Vedic astrology secret to pacify Budh grah. Dhan aur safalta ke liye yeh saral upay aaj hi apnayein. Aaj ka upay will give new direction to your intellect and business. पूरा video dhyaan se dekho 👁️"
-    },
-    "tags": [
-        "aaj ka upay",
-        "aaj ka rashifal",
-        "astrology short video",
-        "vedic astrology remedy",
-        "grah dosh upay",
-        "paisa badhane ka upay",
-        "powerful astrology secret",
-        "hindu astrology today",
-        "spiritual warning",
-        "destiny change today",
-        "Budh grah",
-        "Mercury remedy",
-        "vyapar me safalta",
-        "moong dal upay",
-        "rishi muni",
-        "jyotish gyan",
-        "business growth secret",
-        "vani dosh",
-        "dhan prapti"
-    ],
+    "topic": "Bureaucratic disappearance and hidden romance",
+    "title": "File Number 404: Ek Adhoori Dastavez",
+    "description": "14 March 2018 ko, ek sarkari daftar se Aarohi Sharma gayab ho gayi. Police records mein sirf ek file number tha: 404.\nYeh kahani us aakhri file ki hai, aur us shaks ki, jo jaanta tha ki kuch raaz daftar ki deewaron se zyada gehre the.\nKuch sawaal hamesha adhoore reh jaate hain, aur kuch sach sirf kagazon mein dafan hote hain.",
     "scenes": [
         {
-            "imagePrompt": "Ancient Indian Rishi-Muni with long jata and bright tilak, sitting in deep meditation near a flowing sacred river at twilight. The sky shows a faint, glowing green planet (representing Budh/Mercury). Cinematic, divine light, high detail.",
-            "imageToVideoPrompt": "Slow camera push-in towards the Rishi's face. Subtle ripple effect on the water in the foreground. Dialogue (deep, calm, authoritative): “हे वत्स! आज बुध ग्रह की चाल अत्यंत सूक्ष्म है। तुम्हारी वाणी और व्यापार, दोनों पर इसका सीधा प्रभाव है। एक गलत शब्द, और वर्षों की मेहनत धूल बन सकती है।”"
+            "imagePrompt": "A dimly lit, dusty government archive room in Delhi. Focus on a single man (Rohan, mid-30s, tired eyes) sitting alone at a wooden desk, illuminated only by a weak table lamp. He is staring intently at an old, thick, brown file folder labeled '404'. The air is heavy with silence and dust motes floating in the light.",
+            "imageToVideoPrompt": "A slow, deliberate push-in shot on the man's face, then shifting focus to the file labeled '404'. The camera is handheld, barely moving, creating a sense of heavy stillness. Ambient sound of distant city traffic and the rustle of old paper.\nDialogue (calm, documentary narration):\n“यहाँ पर कहानी शुरू नहीं होती…\nअसल में, यहाँ पर कहानी टूटती है…\nRecords ke mutaabik, 14 March 2018 ko, Aarohi Sharma ne apni desk chhod di. Lekin police file mein sirf ek entry thi: File Number 404. Yeh wohi file thi jise woh aakhri baar padh rahi thi.”\nEnd with silence, not music."
         },
         {
-            "imagePrompt": "Close-up, intense shot of the Rishi's eyes, which are now open, looking directly at the viewer with concern. A faint green aura surrounds his head. Background is dark, smoky cave entrance with flickering oil lamps.",
-            "imageToVideoPrompt": "The oil lamps flicker rapidly. The Rishi slowly raises his index finger. Dialogue (calm, authoritative): “यदि मन में भ्रम है, यदि व्यापार में बार-बार हानि हो रही है, तो समझो बुध दोष तुम्हें घेरे हुए है। यह दोष बुद्धि को जड़ कर देता है। (Sound cue: Sudden silence)”"
+            "imagePrompt": "A deserted, rain-slicked railway platform (Platform Number 3) at night in Mumbai. The yellow sodium lamps cast long, lonely shadows. Two empty tea cups sit on a wet, rusted bench. The atmosphere is melancholic and secretive.",
+            "imageToVideoPrompt": "A slow, panning shot across the empty platform, focusing briefly on the two abandoned tea cups. Subtle environmental motion of light reflecting off the wet tracks and the sound of distant, slow-moving train wheels and light rain.\nDialogue (calm, documentary narration):\n“Log aaj bhi is par baat nahi karte, ki woh dono sirf 'colleagues' nahi the. Unki mulaqaatein hamesha is purane railway station ke platform number teen par hoti thi. Aur unki baatein, hamesha un files ke baare mein thi, jinhe chhoona mana tha. Yeh woh jagah thi jahan unka rishta shuru hua, aur shayad khatam bhi.”\nEnd with silence, not music."
+        },
+        {
+            "imagePrompt": "A close-up of a heavily sealed, unmarked steel door in a forgotten corridor of a large, brutalist government building. The door has several layers of old, official wax seals and a small, faded handwritten note taped near the handle, almost illegible. Moody, low-key lighting.",
+            "imageToVideoPrompt": "A slow, deliberate tilt-up shot, starting from the floor of the corridor and ending on the sealed steel door. The camera holds steady on the seals. The only sound is the faint, echoing drip of water somewhere nearby.\nDialogue (calm, documentary narration):\n“Rohan jaanta tha ki 404 sirf ek number nahi tha. Yeh ek code tha. Us saal ke baad sab kuch badal gaya. Yeh woh aakhri jagah thi jiska zikr Aarohi ne kiya tha. Woh darwaza aaj bhi band hai. Aur uske peeche kya hai, yeh sirf Aarohi jaanti thi. Ya shayad, koi nahi.”\nEnd with silence, not music."
         }
     ]
 }

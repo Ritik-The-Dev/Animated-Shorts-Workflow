@@ -4,7 +4,7 @@ import os
 from PIL import Image
 
 conn = http.client.HTTPSConnection("gen.pollinations.ai")
-ChannelFace = "https://res.cloudinary.com/dw4gtg42m/image/upload/v1768364007/Whisk_d444022aa64aeb59775410354c7217ebdr_mvocjr.png"
+# ChannelFace = "https://res.cloudinary.com/dw4gtg42m/image/upload/v1768364007/Whisk_d444022aa64aeb59775410354c7217ebdr_mvocjr.png"
 headers = {
     'Authorization': 'Bearer sk_Jp9S2kIw9bFfq5ANd7LKIvGi1FzcLCYu'
 }
@@ -16,7 +16,8 @@ def generate_image(prompt , sceneNumber, folderName, max_retries=3):
     # Generate the image and save it
     for attempt in range(max_retries):
         # Make the API request
-        conn.request("GET", f"/image/{encoded_request}?model={modelNames[attempt]}&width=1080&height=1920&image={ChannelFace}", headers=headers)
+        # conn.request("GET", f"/image/{encoded_request}?model={modelNames[attempt]}&width=1080&height=1920&image={ChannelFace}", headers=headers)
+        conn.request("GET", f"/image/{encoded_request}?model={modelNames[attempt]}&width=1080&height=1920", headers=headers)
         res = conn.getresponse()
         data = res.read()
         
