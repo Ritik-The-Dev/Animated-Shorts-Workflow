@@ -12,7 +12,7 @@ headers = {
 def generate_image(prompt , sceneNumber, folderName, max_retries=3):
     # URL encode the prompt for the API request
     encoded_request = urllib.parse.quote(prompt)
-    modelNames = ['gptimage' ,'seedream-pro' ,'kontext']
+    modelNames = ['seedream-pro' ,'kontext','gptimage' ]
     # Generate the image and save it
     for attempt in range(max_retries):
         # Make the API request

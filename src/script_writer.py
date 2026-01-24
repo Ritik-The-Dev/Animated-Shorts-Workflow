@@ -42,121 +42,78 @@ def save_story_state(story_data, file_path=STORY_STATE_FILE):
 # ─────────────────────────────────────────────
 
 def generate_scenes():
-    previous_story = load_previous_story()
-    current_date = datetime.now().strftime("%d %B %Y")
-
-    # ── Continuation Context ──
-    previous_context = ""
-    story_id = str(uuid.uuid4())
-
-    if previous_story:
-        story_id = previous_story.get("storyId", story_id)
-        previous_context = f"""
-PREVIOUS STORY (MANDATORY CONTINUATION):
-
-Title:
-{previous_story.get("title")}
-
-Current Story Summary:
-{previous_story.get("previousSummary")}
-
-Last Known Narration (for continuity):
-{previous_story.get("script")[-800:]}
-
-Rules:
-- This is the SAME story
-- Continue forward in time
-- Do NOT reintroduce characters
-- Do NOT re-explain past events
-- Every scene must be a consequence of the previous one
-"""
-
+    # previous_story = load_previous_story()
+    
     prompt = f"""
-TODAY'S DATE (REFERENCE ONLY):
-{current_date}
+Create a cinematic animated short scene sequence.
 
-━━━━━━━━━━━━━━━━━━
-ROLE:
+STYLE:
+Hand-drawn animated look.
+Soft anime-style illustration.
+Non-realistic proportions.
+Painterly backgrounds, gentle lighting.
+Fantasy science-fiction tone.
+No realism. No live-action look.
 
-You are a DOCUMENTARY STORYTELLER.
+LANGUAGE:
+Narration and dialogue in Hindi (Devanagari only).
 
-Your narration is:
-Calm. Observational. Investigative.
-Emotion exists in pauses, not words.
+CHARACTER DESIGN (IMPORTANT):
+- Animated character
+- Simplified facial features
+- No realistic skin texture
+- Expressive but stylized
+- Childlike proportions without realism
 
-━━━━━━━━━━━━━━━━━━
-{previous_context}
+SCENE CONCEPT:
+An animated young genius with secret technology lives a double life.
+To the world, he appears to be a normal school-going child.
+His abilities and devices remain unseen by others.
 
-━━━━━━━━━━━━━━━━━━
-CORE OBJECTIVE:
+OPENING SCENE:
+A dreamy sky filled with soft clouds at dawn.
+A small animated figure descends gently through the air.
+A softly glowing energy core shines through a stylized chest device.
 
-Continue the SAME documentary-style story.
+Calm narration (Hindi, Devanagari):
+“आज भी यह पूरी तरह तैयार नहीं है…”
 
-If no previous story exists:
-- Begin a NEW story that feels real and unsettling
+The character speaks softly to an unseen system:
+“सिस्टम… सक्रिय हो?
+मुझे स्कूल के लिए देर नहीं होनी चाहिए।”
 
-If a previous story exists:
-- Continue it naturally, as if episodes are unfolding
+VISUAL ELEMENTS TO INCLUDE ACROSS SCENES:
+- Animated mechanical arms assembling clothes in mid-air
+- Stylized boots enabling gentle flight
+- Smooth animated transition from sky → town → school area
+- Background characters remain unaware and unfocused
 
-━━━━━━━━━━━━━━━━━━
-MANDATORY STRUCTURE:
+STORY FLOW:
+- Scene 1: Gentle descent through clouds
+- Scene 2: Automated preparation in the air
+- Scene 3: Quiet animated flight above rooftops
+- Scene 4: Landing near school, technology fades away
+- Scene 5: Character blends in as a normal student
 
-- Generate AT LEAST 5 SCENES (never fewer)
-- Each scene must directly depend on the previous one
-- No scene resets
-- Emotional and narrative progression must be linear
+ENDING TWIST:
+A small animated warning symbol flickers briefly on the chest device,
+visible only to the audience.
 
-━━━━━━━━━━━━━━━━━━
-DOCUMENTARY STYLE RULES:
+OUTPUT REQUIREMENTS:
+Return STRICT JSON only.
 
-- Language: Hindi / Hinglish only
-- No melodrama
-- Avoid explaining emotions
-- Use implication, silence, factual phrasing
-
-Use phrases like:
-- “records ke mutaabik…”
-- “is baat ka koi official jawab nahi mila…”
-- “uske baad jo hua, woh likha nahi gaya…”
-
-━━━━━━━━━━━━━━━━━━
-FOR EACH SCENE (ONLY TWO PROMPTS):
-
-1) imagePrompt
-- Cinematic, realistic still frame
-- Documentary reenactment feel
-- Real locations, moody lighting
-
-2) imageToVideoPrompt
-- Slow camera motion
-- Ambient sound, silence
-- Must INCLUDE calm narration text
-
-━━━━━━━━━━━━━━━━━━
-ALSO GENERATE:
-
-1) FULL CONTINUOUS DOCUMENTARY SCRIPT (all scenes combined)
-2) ONE-PARAGRAPH SUMMARY of where the story now stands
-
-━━━━━━━━━━━━━━━━━━
-STRICT JSON OUTPUT ONLY:
-
+FORMAT:
 {{
-  "storyId": "{story_id}",
-  "title": "...",
-  "description": "...",
-  "previousSummary": "...",
-  "script": "Full documentary narration text",
+  "script": "continuous narration and dialogue in Hindi (Devanagari)",
   "scenes": [
     {{
       "sceneNumber": 1,
-      "imagePrompt": "...",
-      "imageToVideoPrompt": "..."
+      "imagePrompt": "animated visual description only",
+      "imageToVideoPrompt": "camera motion, ambient sound, and spoken lines"
     }}
   ]
 }}
 """
-
     response = client.models.generate_content(
         model="models/gemini-flash-latest",
         contents=prompt,
@@ -168,7 +125,7 @@ STRICT JSON OUTPUT ONLY:
 
     result = json.loads(response.text)
 
-    save_story_state(result)
+    # save_story_state({ "currentStory" : previous_story.get("currentStory") + result["script"]})
     return result
 
 # ─────────────────────────────────────────────

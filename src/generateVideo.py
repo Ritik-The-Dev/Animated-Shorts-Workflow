@@ -97,3 +97,5 @@ def generate_video(vid, scene_data, folder_path):
 
     print(f"\n✅ Portrait video saved: {portrait_path}")
     print(f"✅ Landscape video saved: {landscape_path}\n")
+
+# generate_video("File_To_Upload", {"scenes": [{},{}]}, f"./data/{"File_To_Upload"}")

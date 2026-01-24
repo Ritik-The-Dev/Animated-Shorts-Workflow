@@ -22,14 +22,15 @@ def generate_image_to_video(
         "width": 1080,
         "height": 1920,
         "seed": 0,
-        "enhance": "false",
+        "enhance": "true",
         "negative_prompt": "worst quality, blurry",
         "safe": "false",
         "quality": "hd",
         "image": image_url,
         "transparent": "false",
         "duration": 8,
-        "audio": "true"
+        "audio": "true",
+        "aspectRatio":"9:16"
     }
 
     encoded_prompt = urllib.parse.quote(prompt)
@@ -88,3 +89,10 @@ def generate_image_to_video(
             )
             time.sleep(wait)
 
+
+# generate_image_to_video(
+#     "A girl performing bodyweight squats. Narration (Hindi, calm, deep voice): 'चैनल सब्सक्राइब करो मेरी स्टोरी जानने के लिए'",
+#     "https://res.cloudinary.com/dw4gtg42m/image/upload/v1769266073/Gemini_Generated_Image_3w287j3w287j3w28_c1zxf9.png",
+#     2,
+#     "File_To_Upload",
+# )
