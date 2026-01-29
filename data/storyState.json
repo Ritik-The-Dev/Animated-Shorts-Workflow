@@ -1,34 +1,3 @@
 {
-    "storyId": "story-001",
-    "title": "Jahan Records Khatam Ho Jaate Hain",
-    "description": "The investigation into the 45 kg classified sample, 'Type R-9', leads the team out of the abandoned railway yard and towards a highly secretive, decommissioned research facility.",
-    "previousSummary": "Jahan records khatam ho jaate hain, wahan personal diaries sach bolti hain. Ek purani factory ke andar, ek hawa band kamre mein, humein ek military-grade rivet aur ek paper slip mila. Slip par teen cheezein thi: 1974 ki tareekh, 45 kilograms wajan, aur ek destination code: 'Yard 7-Delta.' Yeh code ek aise railway freight yard ke hisse ka tha jo 1980s mein permanently band kar diya gaya tha. Yard mein, ek purane signal cabin ke andar, humein ek chota, band dibba mila jismein ek inventory slip thi. Slip par wohi tareekh aur wajan (45 kg) tha, lekin is baar uske aage likha tha: 'Contents: Classified Sample - Type R-9.'",
-    "script": "Yeh inventory slip, jo 1974 ki tareekh rakhti thi, sirf wajan aur classified sample ka naam hi nahi bata rahi thi. Corner mein, ek behad halka, rubber stamp ka nishaan tha. Yeh nishaan itna dhundla tha ki pehli nazar mein yeh sirf kagaz ki ghisawat lag raha tha.\n\nLekin high-resolution imaging se pata chala ki yeh koi location code nahi tha. Yeh ek administrative designation thi. Teen aksharon ka code: 'K-47.' Records ke mutaabik, K-47 ek aisa designation tha jiska koi official reference public domain mein maujood nahi tha. Yeh ek aisa darwaza tha jo sirf andar se khulta tha.\n\nK-47 ko cross-reference karne ke liye humein defense expenditure reports aur 1970s ke declassified budget documents ki gehri jaanch karni padi. Aur wahan, ek footnote mein, humein is designation ka zikr mila. K-47 Project ka zikr ek 'High-Altitude Material Science Research Facility' ke saath joda gaya tha. Location: Himalayan foothills mein ek remote area, jise 'Shikhar Base' ke naam se jaana jaata tha.\n\nShikhar Base tak ka safar aasan nahi tha. Yeh facility 1980s ke aakhir mein achanak band kar di gayi thi. Official records ke mutaabik, yeh 'budgetary reasons' ki wajah se hua tha. Lekin iski suraksha, iske perimeter ki deewaron ki unchai, aur iske band hone ki raftaar kuch aur hi ishara kar rahi thi. Hum wahan pahunche jahan sarak khatam ho jaati thi.\n\nBase ka main gate zang kha chuka tha, lekin uski mazbooti ab bhi barkarar thi. Hum andar nahi ja sakte the. Lekin gate ke theek bahar, jahan freight trucks unload hote the, wahan zameen mein dhasaa hua, ek chota sa, zang laga hua metal tag mila. Yeh wohi tarah ka tag tha jo heavy cargo ko label karne ke liye istemaal hota tha.\n\nJab humne us tag ko saaf kiya, toh us par wohi adhoora serial number likha tha jo humein factory mein mile stencil par mila tha. Aur uske neeche, ek chota sa, haath se likha hua nishaan tha: 'R-9 Received. 45 KG.' Jahan records khatam ho jaate hain, wahan yeh chote tukde hamein batate hain ki woh 45 kilo ka sample, 1974 mein, apni aakhri manzil tak pahunch chuka tha. Sawal ab yeh nahi tha ki woh kahan gaya, balki yeh tha ki uske saath wahan kya hua.",
-    "scenes": [
-        {
-            "sceneNumber": 1,
-            "imagePrompt": "Extreme close-up, high-resolution macro shot of a brittle, yellowed inventory slip from 1974. Focus is on a faint, almost invisible rubber stamp mark in the corner. Moody, investigative lighting.",
-            "imageToVideoPrompt": "Slow push-in on the faint rubber stamp mark on the paper slip. Narration text appears: 'Yeh inventory slip, jo 1974 ki tareekh rakhti thi, sirf wajan aur classified sample ka naam hi nahi bata rahi thi.'"
-        },
-        {
-            "sceneNumber": 2,
-            "imagePrompt": "A dimly lit archive room, stacks of dusty, oversized ledgers and files. A researcher uses a specialized UV light to reveal three letters stamped on a document: 'K-47'. Cinematic, cold color palette.",
-            "imageToVideoPrompt": "Camera slowly pans across the stacks of forgotten files, settling on the illuminated 'K-47' code. Narration text appears: 'Lekin high-resolution imaging se pata chala ki yeh koi location code nahi tha. Yeh ek administrative designation thi. Teen aksharon ka code: 'K-47.'"
-        },
-        {
-            "sceneNumber": 3,
-            "imagePrompt": "A computer screen displaying a complex, heavily redacted budget document from the 1970s. A small, highlighted footnote links 'K-47 Project' to a geographical location. Focus on the screen glow in a dark room.",
-            "imageToVideoPrompt": "Slow zoom onto the highlighted footnote on the screen. Ambient sound of keyboard clicks. Narration text appears: 'K-47 Project ka zikr ek 'High-Altitude Material Science Research Facility' ke saath joda gaya tha. Location: Himalayan foothills mein ek remote area...'"
-        },
-        {
-            "sceneNumber": 4,
-            "imagePrompt": "A wide shot of a desolate, winding mountain road ending abruptly at a massive, rusted perimeter fence topped with barbed wire. The facility is barely visible through the fog. Overcast sky, sense of isolation.",
-            "imageToVideoPrompt": "A slow, steady drone shot tracking along the abandoned perimeter fence of the remote base. Narration text appears: 'Shikhar Base tak ka safar aasan nahi tha. Yeh facility 1980s ke aakhir mein achanak band kar di gayi thi.'"
-        },
-        {
-            "sceneNumber": 5,
-            "imagePrompt": "Close-up of a heavily rusted, small metal freight tag half-buried in the dirt near a concrete loading dock. The tag shows faint, etched numbers matching the earlier stencil fragment and the text 'R-9 Received. 45 KG.'",
-            "imageToVideoPrompt": "Camera slowly focuses on the rusted metal tag being carefully brushed clean, revealing the etched numbers and text. Narration text appears: 'Jab humne us tag ko saaf kiya, toh us par wohi adhoora serial number likha tha jo humein factory mein mile stencil par mila tha.'"
-        }
-    ]
+    "currentStory":""
 }
