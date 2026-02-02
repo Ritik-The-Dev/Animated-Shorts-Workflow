@@ -18,9 +18,9 @@ def generate_image_to_video(
     }
 
     query_params = {
-        "model": "veo",
+        "model": "WAN",
         "width": 1080,
-        "height": 1920,
+        "height": 1920, 
         "seed": 0,
         "enhance": "true",
         "negative_prompt": "worst quality, blurry",
