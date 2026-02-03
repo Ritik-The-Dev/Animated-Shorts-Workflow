@@ -1,30 +1,30 @@
 {
-    "script": "आज भी यह पूरी तरह तैयार नहीं है… सिस्टम… सक्रिय हो? मुझे स्कूल के लिए देर नहीं होनी चाहिए।",
+    "script": "आज भी यह पूरी तरह तैयार नहीं है…\nसिस्टम… सक्रिय हो?\nमुझे स्कूल के लिए देर नहीं होनी चाहिए।\nसामान्य मोड, सक्रिय।",
     "scenes": [
         {
             "sceneNumber": 1,
-            "imagePrompt": "Hand-drawn anime style. Wide shot. A dreamy, painterly sky at dawn, filled with soft pink and orange clouds. A young, non-realistically proportioned character, dressed in light under-suit, descends gently. A stylized, softly glowing blue energy core is visible through a device on their chest. Gentle lighting emphasizes the fantasy sci-fi tone.",
-            "imageToVideoPrompt": "Slow, gentle descent (dolly shot following the character). Ambient sound of soft wind and energy hum. NARATION (Hindi, calm, deep voice): 'आज भी यह पूरी तरह तैयार नहीं है…' CHARACTER (softly, focused): 'सिस्टम… सक्रिय हो? मुझे स्कूल के लिए देर नहीं होनी चाहिए।'"
+            "imagePrompt": "Hand-drawn anime style. Soft, painterly background of a dreamy sky at dawn, filled with gentle pink and orange clouds. A small, stylized animated figure (the young genius) descends slowly. A softly glowing, stylized energy core shines through a device embedded in his chest area. Non-realistic proportions.",
+            "imageToVideoPrompt": "Slow, gentle zoom out. The descent is smooth and silent. Ambient sound of soft wind and distant, ethereal music. NARRATION (Hindi, calm and thoughtful): 'आज भी यह पूरी तरह तैयार नहीं है…'"
         },
         {
             "sceneNumber": 2,
-            "imagePrompt": "Close-up/Mid-shot. The character hovers momentarily. Three stylized, glowing mechanical arms (non-realistic, simplified design) rapidly extend from the character's back/waist. The arms swiftly assemble a standard school uniform (white shirt, tie, grey trousers) around the character mid-air. The character's stylized boots emit a controlled, soft blue light for stabilization.",
-            "imageToVideoPrompt": "Quick, fluid animation sequence showing the automated dressing process. Fast, gentle whirring sounds accompanying the mechanical arms. The character remains calm and focused during the assembly."
+            "imagePrompt": "Close-up on the character in mid-air. Four stylized, thin mechanical arms, glowing with soft blue energy, rapidly emerge from his backpack unit. They are assembling a standard school uniform (shirt, tie, jacket) around him with impossible speed and precision. His stylized boots emit a faint, stabilizing anti-gravity glow.",
+            "imageToVideoPrompt": "Quick cuts showing the assembly process. Sound of rapid, precise mechanical whirs and clicks. CHARACTER (Hindi, calm): 'सिस्टम… सक्रिय हो? मुझे स्कूल के लिए देर नहीं होनी चाहिए।'"
         },
         {
             "sceneNumber": 3,
-            "imagePrompt": "Wide, dynamic shot. The character, now fully dressed in the school uniform, performs a smooth, silent flight above stylized, painterly rooftops of a quiet town. The mechanical arms have retracted completely. The flight is fast but graceful. The background elements (rooftops, trees) are soft and slightly blurred, emphasizing motion.",
-            "imageToVideoPrompt": "Smooth tracking shot following the flight path. Sound of wind rush quickly fades, replaced by soft, distant ambient sounds of the waking town below. The character maintains a neutral, focused expression."
+            "imagePrompt": "Wide shot. The character, now fully dressed in his school uniform, flies smoothly and silently just above the stylized, painterly rooftops of the town. The town architecture is whimsical and non-realistic. Background characters (early risers) are blurry, unfocused shapes, completely unaware of the flying figure.",
+            "imageToVideoPrompt": "Smooth tracking shot following the character's flight path. Muted, stylized city sounds below. Gentle, low hum of the flight system."
         },
         {
             "sceneNumber": 4,
-            "imagePrompt": "Mid-shot. The character executes a perfect, gentle landing on a patch of grass near a stylized school gate. The glow from the chest core instantly dims and vanishes beneath the uniform shirt. The stylized flight boots seamlessly and instantly transform into normal-looking school shoes. The technology disappears without a trace.",
-            "imageToVideoPrompt": "Quick zoom-in on the landing. A subtle, soft 'thud' sound effect. The ambient sound shifts to distant school chatter and the ringing of a school bell."
+            "imagePrompt": "The character lands silently on a patch of stylized grass near the entrance of a large, non-realistic school building. The glow from the boots and chest core instantly vanishes. The mechanical arms retract seamlessly and instantly into the backpack/uniform structure.",
+            "imageToVideoPrompt": "Quick, subtle 'shhhk' sound of retraction and deactivation. The character whispers (Hindi, internal thought): 'सामान्य मोड, सक्रिय।'"
         },
         {
             "sceneNumber": 5,
-            "imagePrompt": "Medium shot. The character walks casually into the schoolyard, blending in perfectly with other stylized, non-detailed background students. He looks like a normal child. Close-up on the chest area (under the shirt fabric): a small, animated red and yellow warning symbol (a stylized glitch icon) flickers briefly on the now-hidden energy core, visible only to the audience, before vanishing completely.",
-            "imageToVideoPrompt": "Normal walking motion. Sound of typical schoolyard chatter and footsteps. A subtle, high-pitched electronic 'ping' accompanies the brief flicker of the warning symbol. Hold on the character blending into the crowd."
+            "imagePrompt": "The character walks confidently into the schoolyard, blending in perfectly with other stylized students. The scene is bright and normal. Close-up on the character's chest, now covered by the uniform shirt. A tiny, stylized red warning symbol (like a broken circuit icon) flickers briefly on the hidden chest device, visible only to the audience, before vanishing completely.",
+            "imageToVideoPrompt": "Normal schoolyard chatter and ambient sounds. A final, very subtle electronic 'bzzzt' sound accompanies the warning symbol flicker. Hold on the character walking away, looking completely normal."
         }
     ]
 }

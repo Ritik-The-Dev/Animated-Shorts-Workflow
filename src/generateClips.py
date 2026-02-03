@@ -18,7 +18,7 @@ def generate_image_to_video(
     }
 
     query_params = {
-        "model": "WAN",
+        "model": "wan",
         "width": 1080,
         "height": 1920, 
         "seed": 0,
